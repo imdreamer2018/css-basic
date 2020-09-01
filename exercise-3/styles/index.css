@@ -1,6 +1,8 @@
 body {
     background-color: white;
     font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation ul {
@@ -12,6 +14,7 @@ body {
 .navigation li {
     font-weight: 100;
     letter-spacing: 2px;
+    padding: 10px;
 }
 
 .navigation  li.current {
@@ -21,14 +24,20 @@ body {
     letter-spacing: 4px;
 }
 
+.navigation .global {
+    visibility: hidden;
+}
+
 #banner {
     background-image: url("../img/background-img.jpeg");
     background-size: cover;
     background-position: bottom center;
     width: 100%;
+    height: 350px;
 }
 
 h1 {
+    border-style: solid;
     position: relative;
     top: 50px;
     width: 400px;
@@ -41,6 +50,10 @@ h1 {
 
 #main {
     padding: 40px;
+    margin: auto;
+    width: 500px;
+    height: 800px;
+    overflow: auto;
     text-align: center;
 }
 
@@ -52,6 +65,9 @@ h2 {
 }
 
 h3 {
+    border-style: none none dotted dotted;
+    margin: 30px 20px;
+    padding: 20px 30px;
     color: red;
     font-size: 14px;
     line-height: 48px;
@@ -66,7 +82,8 @@ p {
 }
 
 .pull-quote {
-
+    width: 400px;
+    margin-left: 50px;
 }
 
 .byline {
@@ -89,6 +106,8 @@ p {
     background: red;
     border: 1px solid red;
     border-radius: 3px;
+    padding: 14px;
+    margin: 10px;
     color: white;
     display: inline-block;
     text-decoration: none;
