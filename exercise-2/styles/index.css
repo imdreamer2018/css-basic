@@ -13,19 +13,25 @@ body {
 }
 
 h1 {
+    width: 100%;
     color: #fff;
     font-size: 2em;
-    width: 100%;
+    font-family: "Georgia", serif;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.5);
     font-weight: 100;
     font-size: 22px;
+    font-family: "Georgia", serif;
     line-height: 24px;
     padding-bottom: 30px;
     text-align: left;
+    text-transform: uppercase;
 }
 
 p {
@@ -33,23 +39,38 @@ p {
     line-height: 1.3em;
     text-align: left;
     width: 100%;
+    font-size: 18px;
+    font-family: "Helvetica", serif;
+}
+
+p::first-line {
+    font-weight: bold;
 }
 
 .image {
     background-size: cover;
     background-position: center;
+    background-image: url("../img/background-img.jpg");
     height: 300px;
 }
 
 .caption {
     display: block;
+    color: black;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
+    font-style: italic;
     line-height: 14px;
     margin-left: 20px;
     padding: 10px;
     position: relative;
     top: 80%;
     width: 60%;
+    background-color: white;
+    opacity: 0.75;
+}
+
+.caption a {
+    text-decoration: none;
 }
 
